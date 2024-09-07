@@ -1,0 +1,112 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif; /* A luxurious serif font */
+}
+
+body {
+    background-color: #CECBC8; /* Cloud */
+    color: #28221E; /* Zeus */
+    line-height: 1.8;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header (Top Bar) */
+header {
+    background-color: #28221E; /* Zeus */
+    position: fixed; /* Make the header stay on top */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to top */
+    left: 0;
+    z-index: 1000; /* Stay on top of everything else */
+    padding: 10px 0;
+}
+
+header h1 {
+    color: #CECBC8; /* Cloud */
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #CECBC8; /* Cloud */
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #7F6951; /* Shadow */
+}
+
+/* Adjusting content to account for fixed header */
+body {
+    padding-top: 80px; /* Push content down so it doesn't go under the header */
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #7F6951; /* Shadow */
+    color: #CECBC8; /* Cloud */
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* General Page Sections */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+section p, section ul {
+    font-size: 1.3em;
+    line-height: 1.7;
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #28221E; /* Zeus */
+    color: #CECBC8; /* Cloud */
+    padding: 30px 0;
+}
+
+footer p {
+    margin: 0;
+}
